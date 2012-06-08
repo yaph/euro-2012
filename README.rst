@@ -8,4 +8,4 @@ Player Relations
 
 A `force-directed graph`_ showing relations of football players to club mates grouped by national teams.
 
-.. _`force directed graph`: http://www.torlaune.de/euro-2012/spieler-relationen/
+.. _`force-directed graph`: http://www.torlaune.de/euro-2012/spieler-relationen/
