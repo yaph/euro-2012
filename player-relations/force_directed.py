@@ -28,7 +28,7 @@ def add_links(iterable, item):
         players[i]['nodeid'] = get_id(nodes,
             {'name': players[i]['name'], 'group': get_id(clubs, players[i]['club']), 'team': players[i]['team']})
         # don't link player to himself
-        if players[item]['nodeid'] != players[i]['nodeid'] and players[item]['team'] != players[i]['team']:
+        if players[item]['nodeid'] != players[i]['nodeid']:
             links.append({'source': players[item]['nodeid'], 'target': players[i]['nodeid']})
 
 
@@ -58,5 +58,5 @@ for team, pls in players_by_teams.items():
     graphs[team] = {'nodes': nodes, 'links': links}
 
 js = 'var teams=%s;var graphs=%s;' % (json.dumps(sorted(teams)), json.dumps(graphs))
-print js
+print( js )
 
